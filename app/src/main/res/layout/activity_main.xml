@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/Pajaro"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="Pajaro"
+        app:layout_constraintEnd_toEndOf="@+id/PajaroLoco"
+        app:layout_constraintTop_toBottomOf="@+id/PajaroLoco" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Animal Soundboard"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/Nekito"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="602dp" />
+
+    <Button
+        android:id="@+id/Delfin"
+        android:layout_width="99dp"
+        android:layout_height="49dp"
+        android:text="Delfin"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Nekito"
+        app:layout_constraintEnd_toEndOf="@+id/Perro"
+        app:layout_constraintStart_toStartOf="@+id/Perro" />
+
+    <Button
+        android:id="@+id/Nekito"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="47dp"
+        android:text="Gato"
+        app:layout_constraintStart_toEndOf="@+id/Delfin"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/GalloDespertador"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:text="Gallo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Lobo"
+        app:layout_constraintStart_toStartOf="@+id/Delfin" />
+
+    <Button
+        android:id="@+id/Lobo"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="34dp"
+        android:text="Lobo"
+        app:layout_constraintStart_toStartOf="@+id/Nekito"
+        app:layout_constraintTop_toBottomOf="@+id/Nekito" />
+
+    <Button
+        android:id="@+id/Mono"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="Mono"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PajaroLoco"
+        app:layout_constraintStart_toStartOf="@+id/Perro" />
+
+    <Button
+        android:id="@+id/PajaroLoco"
+        android:layout_width="101dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:text="Loquillo"
+        app:layout_constraintEnd_toEndOf="@+id/Lobo"
+        app:layout_constraintTop_toBottomOf="@+id/Lobo" />
+
+    <Button
+        android:id="@+id/Perro"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginRight="74dp"
+        android:text="Perro"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Pajaro"
+        app:layout_constraintEnd_toEndOf="@+id/Vaca" />
+
+    <Button
+        android:id="@+id/Vaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Vaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Perro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
